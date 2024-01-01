@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title><%= @title %></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="/static/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+<nav>
+    <a href="<%= @@site[:baseurl]%>">안녕</a>
+</nav>
+
+<main class="typo">
+    <h1><%= @title %></h1>
+
+    <%= @content %>
+</main>
+</div>
+
+<footer class="footer">
+    <p><%= Time.now.strftime("%Y-%m-%d %H:%M") %>에 마지막으로 수정함.</p>
+    <p>© 안녕. <a href="https://github.com/nyeong/hanassig/blob/main/LICENSE">CC BY-SA</a></p>
+</footer>
+
+</body>
+</html>

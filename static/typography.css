@@ -1,0 +1,100 @@
+@import "_palette.css";
+@import "rouge.github.css";
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--sans-serif);
+    color: var(--fg-default);
+    background-color: var(--bg-default);
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--fg-primary);
+}
+
+code {
+    font-family: var(--monospace);
+    font-size: 0.85em;
+    font-weight: 400;
+    color: var(--fg-code);
+    background-color: var(--bg-code);
+    padding: 0.2em 0.4em;
+    white-space: nowrap;
+    border-radius: 6px;
+    line-height: 1;
+}
+
+kbd {
+    font-family: var(--monospace);
+    font-size: 0.85em;
+    font-weight: 400;
+    color: var(--fg-code);
+    background-color: var(--bg-code);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    line-height: 1;
+    white-space: nowrap;
+    border: 1px solid var(--nord5);
+    box-shadow:
+        0 1px 1px rgba(0, 0, 0, 0.2),
+        0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
+}
+
+/**
+ * blocks
+ */
+blockquote {
+    margin: 0;
+    border-left: 0.25em solid var(--nord5);
+    padding-left: var(--inner-padding);
+    color: var(--fg-muted);
+}
+.quoteblock {
+    margin-top: var(--inner-padding);
+    margin-bottom: var(--inner-padding);
+}
+.quoteblock .attribution {
+    text-align: right;
+    font-size: 85%;
+}
+
+pre {
+    font-family: var(--monospace);
+    font-size: 0.8125rem;
+    line-height: 1.45;
+    font-weight: 400;
+    padding: var(--inner-padding);
+    color: var(--fg-code);
+    background-color: var(--bg-code);
+    overflow-x: scroll;
+}
+
+pre code {
+    padding: 0;
+    font-size: inherit;
+    background-color: transparent;
+    white-space: inherit;
+}
+
+hr {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--bg-muted);
+}
+
+ul,
+ol {
+    padding-inline-start: var(--list-padding);
+}
+
+dt {
+    font-weight: 800;
+}
+
+dd {
+    margin-left: var(--list-padding);
+}
