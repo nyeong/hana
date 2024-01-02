@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+require 'pathname'
+
+ROOT_DIR = Pathname.new(__FILE__).dirname.parent
+
+Kernel::load ROOT_DIR.join('lib/hana.rb')
+
+NOTES_DIR = ARGV[0]
+BUILD_DIR = ARGV[1]
+
+Hana.build(NOTES_DIR, BUILD_DIR)
+
