@@ -6,6 +6,7 @@ GEM
     fiddle (1.1.2)
     minify_html (0.11.2)
       fiddle (~> 1.0)
+    rouge (4.2.0)
     rspec (3.12.0)
       rspec-core (~> 3.12.0)
       rspec-expectations (~> 3.12.0)
@@ -28,6 +29,7 @@ DEPENDENCIES
   asciidoctor (~> 2.0.20)
   fiddle (~> 1.1, >= 1.1.2)
   minify_html (~> 0.11.0)
+  rouge (~> 4.2.0)
   rspec
 
 BUNDLED WITH

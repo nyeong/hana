@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'asciidoctor'
-require 'asciidoctor/katex/treeprocessor'
 require 'erb'
 require 'fileutils'
 require_relative './converter'
